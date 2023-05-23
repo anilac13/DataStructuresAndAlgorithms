@@ -1,4 +1,5 @@
 ﻿using DataStructuresAndAlgorithms.BinarySearchProblem;
+using DataStructuresAndAlgorithms.BubbleSortProblem;
 using DataStructuresAndAlgorithms.InsertionSortProblem;
 using System;
 namespace DataStructuresAndAlgorithms
@@ -10,7 +11,7 @@ namespace DataStructuresAndAlgorithms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose option to perform \n1.Binary Search \n2.Permutations of a String \n3.Insertion Sort \n4.Exit");
+                Console.WriteLine("\nChoose option to perform \n1.Binary Search \n2.Permutations of a String \n3.Insertion Sort \n4.Bubble Sort \n5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -29,6 +30,10 @@ namespace DataStructuresAndAlgorithms
                         sort.Sort(@"D:\BridgeLabs\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\InsertionSortProblem\File.txt");
                         break;
                     case 4:
+                        BubbleSort bubbleSort = new BubbleSort();
+                        bubbleSort.Sort(@"D:\BridgeLabs\DataStructuresAndAlgorithms\DataStructuresAndAlgorithms\BubbleSortProblem\File.txt");
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
