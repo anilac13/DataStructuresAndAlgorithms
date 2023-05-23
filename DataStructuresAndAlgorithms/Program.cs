@@ -11,7 +11,7 @@ namespace DataStructuresAndAlgorithms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose option to perform \n1.Binary Search \n2.Permutations of a String \n3.Insertion Sort \n4.Bubble Sort \n5.Check Anagram \n6.Exit");
+                Console.WriteLine("\nChoose option to perform \n1.Binary Search \n2.Permutations of a String \n3.Insertion Sort \n4.Bubble Sort \n5.Check Anagram \n6.Prime range \n7.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -38,6 +38,10 @@ namespace DataStructuresAndAlgorithms
                         anagram.CheckAnagram();
                         break;
                     case 6:
+                        PrimeRange primeRange = new PrimeRange();
+                        primeRange.PrimeNumbers();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
